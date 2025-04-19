@@ -31,7 +31,6 @@ let currentObserver = null;
 let pageType = undefined;
 let chatbardock = undefined;
 
-
 const autoHideChat = (e) => {
 	if (chatbardock) {
 		const clientRect = chatbardock.getBoundingClientRect();
