@@ -17,7 +17,7 @@ type Props = {
 export const OptionsView = ({ config, onChange }: Props) => {
   const [onlineMessages, setOnlineMessages] = useSyncedState('isOnlineMessagesEnabled', config.isOnlineMessagesEnabled());
   const [areLogTimestampsHidden, setLogTimestampHidden] = useSyncedState('areLogTimestampsHidden', config.areLogTimestampsHidden());
-  const [hideLeftBarOption, setHideLeftBarOption] = useSyncedState(config.isLeftBarOptionHidden());
+  const [hideLeftBarOption, setHideLeftBarOption] = useSyncedState('hideLeftBarOption', config.isLeftBarOptionHidden());
   const [eloHidden, setEloHidden] = useSyncedState('eloHidden', config.isEloHidden());
   const [tracking, setTracking] = useSyncedState('tracking', config.isTrackingEnable());
   const [soundNotification, setSoundNotification] = useSyncedState('soundNotification', config.isSoundNotificationEnable());
